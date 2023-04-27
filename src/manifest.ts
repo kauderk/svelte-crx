@@ -32,5 +32,12 @@ export default defineManifest({
       matches: [],
     },
   ],
+  chrome_url_overrides: {
+    newtab: 'newtab.html',
+  },
+  minimum_chrome_version: '10.0',
+  devtools_page: 'devtools.html',
+  // @ts-expect-error
+  transition_pages: ['panel.html'],
   permissions: [],
 })

@@ -3,9 +3,9 @@
 </script>
 
 <main>
-  <h3>New Tab Page!</h3>
+  <h3>DevTools Panel Page!</h3>
 
-  <h6>v 0</h6>
+  <h6>v 0.0.0</h6>
 
   <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank">Power by {crx}</a>
 </main>
