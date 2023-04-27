@@ -5,6 +5,7 @@ import path from 'path'
 import sveltePreprocess from 'svelte-preprocess'
 
 import manifest from './src/manifest'
+import { removePanel } from './remove-panel'
 
 export default defineConfig(({ mode }) => {
   const production = mode === 'production'
@@ -26,8 +27,9 @@ export default defineConfig(({ mode }) => {
           dev: !production,
         },
         preprocess: sveltePreprocess(),
+        emitCss: false,
       }),
-      ,
+      removePanel(),
     ],
     resolve: {
       alias: {

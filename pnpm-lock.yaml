@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  '@crxjs/vite-plugin@1.0.14':
+    hash: uxaxqsbgvbnqqaznfptqkd4go4
+    path: patches/@crxjs__vite-plugin@1.0.14.patch
+
 specifiers:
   '@crxjs/vite-plugin': ^1.0.12
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.49
@@ -13,7 +18,7 @@ specifiers:
   vite: ^2.9.13
 
 devDependencies:
-  '@crxjs/vite-plugin': 1.0.14_vite@2.9.15
+  '@crxjs/vite-plugin': 1.0.14_uxaxqsbgvbnqqaznfptqkd4go4_vite@2.9.15
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.49_svelte@3.58.0+vite@2.9.15
   '@types/chrome': 0.0.193
   prettier: 2.8.8
@@ -279,7 +284,7 @@ packages:
     dev: true
     optional: true
 
-  /@crxjs/vite-plugin/1.0.14_vite@2.9.15:
+  /@crxjs/vite-plugin/1.0.14_uxaxqsbgvbnqqaznfptqkd4go4_vite@2.9.15:
     resolution: {integrity: sha512-emOueVCqFRFmpcfT80Xsm4mfuFw9VSp5GY4eh5qeLDeiP81g0hddlobVQCo0pE2ZvNnWbyhLrXEYAaMAXjNL6A==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -305,6 +310,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+    patched: true
 
   /@esbuild/linux-loong64/0.14.54:
     resolution: {integrity: sha512-bZBrLAIX1kpWelV0XemxBZllyRmM6vgFQQG2GdNb+r3Fkp0FOh1NJSvekXDs7jq70k4euu1cryLMfU+mTXlEpw==}

@@ -1,0 +1,12 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index beadb1174a84b41e3ebb1c805bf431f8c2b23719..ada30a6d9d0c18b8f5763f12d2715a58814c67f4 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -67,6 +67,7 @@ function htmlFiles(manifest) {
+     manifest.action?.default_popup,
+     Object.values(manifest.chrome_url_overrides ?? {}),
+     manifest.devtools_page,
++	...(manifest.transition_pages ?? []),
+     manifest.options_page,
+     manifest.options_ui?.page,
+     manifest.sandbox?.pages
